@@ -1,0 +1,5 @@
+ language: node_js
+ node_js:
+   - 0.4
+   - 0.6
+   - 0.7 # versión de desarrollo de la 0.8, puede ser inestable
