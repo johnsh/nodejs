@@ -5,6 +5,9 @@ function iniciar() {
 function subir() {
   console.log("Manipulador de petición 'subir' ha sido llamado.");
 }
-
+function test(){
+  require("./test");
+}
 exports.iniciar = iniciar;
 exports.subir = subir;
+exports.test = test;

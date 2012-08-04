@@ -3,13 +3,13 @@ var http = require("http");
 var url = require("url");
 
 // Se crea la funciona que iniciara el servidor
-function server( route ) {
+function server( route, handle ) {
 http.createServer( function( req, res ) {
 	// Recibimos el pathname de la peticion
 	var pathname = url.parse( req.url ).pathname;
-	route( pathname );
+	route( pathname, handle );
 	res.writeHead( 200,  {'Conten-Type' : 'text/plain'} );
-	res.end('Curso de node.js');
+	res.end('Fin');
 
 
 } ).listen( 3000, "127.0.0.1" );
