@@ -1,6 +1,18 @@
 var vows = require('vows'),
     assert = require('assert');
 
+vows.describe("Sumas").addBatch({
+	'Suma entre dos numeros' :  {
+		topic : function() {
+			return 4;
+		},
+		'Resultado' : function( topic ) {
+			assert.equal(topic, 66, "Resultado Ok");
+		}
+	}
+
+}).run();    
+/*
 // Create a Test Suite
 vows.describe('Division by Zero').addBatch({
     'when dividing a number by zero': {
@@ -23,3 +35,4 @@ vows.describe('Division by Zero').addBatch({
         }
     }
 }).run(); // Run it
+*/
