@@ -7,7 +7,7 @@ vows.describe("Sumas").addBatch({
 			return 4;
 		},
 		'Resultado' : function( topic ) {
-			assert.equal(topic, 66, "Resultado Ok");
+			assert.equal(topic, 4, "Resultado Ok");
 		}
 	}
 
