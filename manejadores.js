@@ -1,5 +1,6 @@
 function iniciar() {
-  console.log("Manipulador de petición 'iniciar' ha sido llamado.");
+  	console.log("Manipulador de petición 'iniciar' ha sido llamado.");
+  	return 1;
 }
 
 function subir() {

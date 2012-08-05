@@ -8,8 +8,9 @@ http.createServer( function( req, res ) {
 	// Recibimos el pathname de la peticion
 	var pathname = url.parse( req.url ).pathname;
 	route( pathname, handle );
-	res.writeHead( 200,  {'Conten-Type' : 'text/plain'} );
-	res.end('Fin');
+	res.writeHead( 200,  {'Conten-Type' : 'text/html'} );
+	res.write("<p>Hola</p>")
+	res.end();
 
 
 } ).listen( 3000, "127.0.0.1" );

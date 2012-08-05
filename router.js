@@ -1,6 +1,9 @@
 function route( pathname, handle ) {
-	if( typeof handle[pathname] === 'function' ) {
-		return handle[ pathname ]();  
+	if( typeof handle[pathname] === 'function' && handle[ pathname ] ) {
+		handle[ pathname ]();  
+		return true;
+	} else {
+		return false;
 	}
 	
 }

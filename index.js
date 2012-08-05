@@ -1,4 +1,6 @@
-var init = require("./servidor"), router = require("./router"), reqHandles = require("./manejadores");
+var init = require("./servidor"), 
+	router = require("./router"), 
+	reqHandles = require("./manejadores");
 
 var handle =  {};
 handle["/"] = reqHandles.iniciar;

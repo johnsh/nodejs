@@ -1,7 +1,44 @@
 var vows = require('vows'),
-    assert = require('assert');
+    assert = require('assert'),
+    router = require('../../router'),
+    handlers = require("../../manejadores");
 
-vows.describe("Sumas").addBatch({
+/* Router. */
+var h = {}, e = function() {};
+h["/lo-que-si-existe"] = e;
+assert.equal(router.route("/lo-que-no-existe", h), false, "Router: Error 404, Manejador no existe.");
+assert.equal(router.route("/lo-que-si-existe", h), true, "Router: Manejador de peticion Okay");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+vows.describe("Router de peticiones").addBatch({
+    "Cuando la peticion es 404" : {
+        topic : function(){
+            var h = {};
+            h["/"] = 0;
+
+            return router.route("/", h);
+        },
+        "Error 404" : function( topic ) {
+            assert.equal( topic, undefined, "Error 404");
+        }
+    }
+    
+
+}).run();*/
+/*vows.describe("Sumas").addBatch({
 	'Suma entre dos numeros' :  {
 		topic : function() {
 			return 4;
@@ -11,7 +48,7 @@ vows.describe("Sumas").addBatch({
 		}
 	}
 
-}).run();    
+}).run();   */ 
 /*
 // Create a Test Suite
 vows.describe('Division by Zero').addBatch({

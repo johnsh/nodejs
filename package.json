@@ -1,6 +1,6 @@
 {
   "name": "nodejs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
 	"test": "vows --spec"
@@ -10,5 +10,5 @@
     "url": "https://github.com/johnsh/nodejs.git"
   },
   "license": "BSD",
-  "description": "nodejs\r ======"
+  "description": "Primera app en Nodejs"
 }
