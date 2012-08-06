@@ -1,5 +1,6 @@
-var init = require("./servidor"), 
-	router = require("./router"), 
+/*jslint devel: true, node: true */
+var init = require("./servidor"),
+	router = require("./router"),
 	reqHandles = require("./manejadores");
 
 var handle =  {};
